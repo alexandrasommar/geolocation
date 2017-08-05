@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Zombie Outbreak</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="any" href="icons/z.png">
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="container">
+          <h1 class="js-heading">Zombie outbreak</h1>
+          <h3>Wanna fight some? Bring your weapon and find zombie zones near you</h3>
+      </div>
+      <img src="img/zombie.png" alt="Scary zombie" class="js-zombie">
+      <div id="map" class="map"></div>
+      <div id="legend"></div>
+    </div> <!-- .main-container -->
+    <div id="right-panel" class="right-panel"><h3>X Close directions</h3></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJV1bjztmV8VvDnjNmC0yDdzW0WVO8B4s&libraries=places&callback=googleMap.init"
+    type="text/javascript" async defer></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

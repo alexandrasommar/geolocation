@@ -1,0 +1,113 @@
+/* ***************************
+		BASE STYLES
+*************************** */
+
+body {
+  background: linear-gradient(182deg, #b2181f, rgba(36, 47, 62, 0.28));
+  color: $black;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+}
+
+.container {
+  color: $darkred;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 3.4rem;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 50%;
+}
+.hidden {
+  display: none;
+}
+
+/* ***************************
+		GENERAL MAP STYLES
+*****************************/
+
+.map {
+  background-image: url(../img/giphy-downsized.gif);
+  height: 80vh;
+  width: 100%;
+}
+
+button {
+  background-color: $red;
+  border: none;
+  color: $white;
+  cursor: hand;
+  cursor: pointer;
+  font-family: 'Courier', monospace;
+  outline: none;
+  padding: 10px;
+}
+
+.gm-style-iw {
+  font-family: 'Courier', monospace;
+  overflow: visible;
+}
+
+/*****************************
+		RIGHT PANEL
+*****************************/
+
+.right-panel {
+  background-color: brown;
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 0;
+  .adp-directions {
+    background-color: $white;
+  }
+  .adp-step, .adp-substep {
+    border-top: 1px solid $red;
+  }
+  .adp, .adp table {
+    font-family: 'Courier', monospace;
+  }
+  .adp-summary {
+    color: $white;
+  }
+  .adp-legal {
+    color: $white;
+  }
+  h3 {
+    background-color: $white;
+    cursor: pointer;
+    padding: 5%;
+    text-transform: capitalize;
+  }
+}
+
+.visible {
+  @extend .right-panel;
+    display: block;
+    right: 0;
+    transition: right .3s ease;
+    width: 100%;
+}
+
+/* ***************************
+		LEGEND
+*****************************/
+
+#legend {
+  background-color: $white;
+  font-family: 'Gloria Hallelujah', cursive;
+  padding: 10px;
+  img {
+    max-width: 40px;
+  }
+}

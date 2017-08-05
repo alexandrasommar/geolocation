@@ -1,0 +1,13 @@
+{
+	"name": "Zombie Outbreak",
+	"short_name": "Zombie Outbreak",
+	"start_url": ".",
+	"display": "standalone",
+	"background-color": "#fcfcfc",
+	"description": "Find zombie zones near you with Zombie Outbreak",
+	"icons": [{
+		"src": "icons/z.svg",
+		"sizes": "48x48 72x72 96x96 128x128 192x192",
+		"type": "svg/xml"
+		}]
+}
